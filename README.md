@@ -58,4 +58,4 @@ It is a Blocksy child theme, not a full WordPress installation.
 ## Notes
 
 - The Git repository intentionally contains **only the child theme code**,  
-  not the entire WordPress installation, database, or uploads.
+  not the entire WordPress installation, database or uploads.
