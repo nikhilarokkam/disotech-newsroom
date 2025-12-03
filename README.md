@@ -30,7 +30,7 @@ It is a Blocksy child theme, not a full WordPress installation.
     - Featured case study hero card
     - Popular / Recent / All articles grids
     - Case Studies slider card
-    - “View all” and “More articles” buttons
+    - "View all" and "More articles" buttons
     - Responsive rules for desktop / tablet / mobile
 
 - `assets/js/newsroom-carousel.js`
