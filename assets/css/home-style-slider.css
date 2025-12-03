@@ -1,0 +1,134 @@
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \******************************************************************************************************************************************************/
+/* Core variables */
+/* Components */
+/* CSS Reset */
+/* Mixins, helpers and functions */
+/* Global include*/
+.our-slider {
+  padding: 50px 0;
+}
+@media (max-width: 1024px) {
+  .our-slider {
+    padding: 25px 0;
+  }
+}
+.our-slider__title {
+  margin-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .our-slider__title {
+    margin-bottom: 25px;
+  }
+}
+.our-slider .blaze-our-slider {
+  margin-bottom: 25px;
+}
+.our-slider .blaze-track-container {
+  padding: 5px;
+  margin-bottom: 25px;
+}
+.our-slider .blaze-track div {
+  max-height: 350px;
+}
+@media (max-width: 480px) {
+  .our-slider .blaze-track div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.our-slider .blaze-track div img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 16px;
+}
+.our-slider .blaze-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-slider .blaze-pagination button {
+  text-indent: -9999px;
+  overflow: hidden;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0.5px solid #181C1F;
+  background: transparent;
+  margin: 0 6px;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s, background-color 0.3s;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.our-slider .blaze-pagination button.active {
+  width: 60px;
+  border: 1px solid #0070E1;
+  border-radius: 32px;
+  background-color: transparent;
+}
+.our-slider .our-slider__box-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/blaze-slider/dist/blaze.css ***!
+  \*****************************************************************************************************************************************************************************/
+.blaze-slider {
+  --slides-to-show:1;
+  --slide-gap:20px;
+  direction: ltr;
+}
+
+.blaze-container {
+  position: relative;
+}
+
+.blaze-track-container {
+  overflow: hidden;
+}
+
+.blaze-track {
+  will-change: transform;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--slide-gap);
+  --slide-width:calc(
+    (100% - (var(--slides-to-show) - 1) * var(--slide-gap)) /
+      var(--slides-to-show)
+  );
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blaze-track > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: var(--slide-width);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}

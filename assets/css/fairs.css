@@ -1,0 +1,136 @@
+.fairs {
+  padding: 50px 0;
+}
+
+@media (max-width: 1024px) {
+  .fairs {
+    padding: 25px 0;
+  }
+}
+
+.fairs__intro {
+  text-align: left;
+  max-width: 640px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .fairs__intro {
+    margin-bottom: 25px;
+  }
+}
+
+.fairs__title {
+  margin-bottom: 15px;
+}
+
+.fairs__text {
+  color: #444C56;
+}
+
+.fairs__text p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.fairs__text p:last-child {
+  margin: 0;
+}
+
+.fairs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 560px) {
+  .fairs__list {
+    gap: 10px;
+  }
+}
+
+.fairs__card {
+  max-width: 307px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 10px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.fairs__card:hover {
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.fairs__card-logo {
+  max-width: 308px;
+  width: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.fairs__card-logo img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+  border-radius: 32px;
+}
+
+.fairs__card-title {
+  font-size: 19px;
+  color: #181C1F;
+  font-weight: 600;
+}
+
+.fairs__card-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  color: #2C2C2C;
+}
+
+.fairs__card-link {
+  color: #2C2C2C;
+  text-decoration: underline;
+  -webkit-transition: color ease-in 0.3s;
+  transition: color ease-in 0.3s;
+  margin-top: auto;
+}
+
+.fairs__card-link:hover {
+  color: #004F9F;
+}
+
+@media (max-width: 560px) {
+ .fairs__card-link {
+    font-size: 13px;
+  }
+}

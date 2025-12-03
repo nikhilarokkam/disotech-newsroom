@@ -1,0 +1,174 @@
+/* theme header */
+
+.hero-section {
+  margin-top: -140px;
+}
+
+.post-type-archive-produkte .top-navigation__col.top-navigation__col--left {
+  width: 70%;
+}
+
+@media (max-width: 1024px) {
+  .post-type-archive-produkte .top-navigation__col.top-navigation__col--left {
+    width: 100%;
+  }
+}
+
+/* popup */
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Neon-glass popup box */
+.popup-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  padding: 40px 30px;
+  position: relative;
+  animation: fadeInUp 0.4s ease;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+/* Close button styled with glow */
+.close-popup {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #0ff;
+  cursor: pointer;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+/* Popup title with neon glow */
+.popup-title {
+  font-size: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Popup content with slight opacity */
+.popup-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Button to trigger popup */
+.trigger-popup {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-left: 10px;
+}
+
+.trigger-popup:hover {
+  transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Z-index wrapper */
+.site-popups {
+  position: relative;
+  z-index: 999;
+}
+
+.contact-section .contact-section__box {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  border-radius: 32px;
+}
+
+#formular-kontakt.contact-section .contact-section__box .sub-label {
+  background: linear-gradient(90deg, #0372e1 0%, #63cdf5 100%);
+  color: #ffffff;
+}
+.contact-section .contact-section__box .contact-section__text ul {
+  padding-left: 10px;
+}
+.contact-section .contact-section__box .contact-section__text li {
+  list-style: none;
+  position: relative;
+  padding-left: 35px;
+}
+
+.contact-section .contact-section__box .contact-section__text li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 20px;
+  border-right: 3px solid #004f9f;
+  border-bottom: 3px solid #004f9f;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.contact-section .ff-el-progress {
+  height: 30px !important;
+}
+.contact-section .ff-el-progress span {
+  padding-top: 5px !important;
+}
+
+.contact-section .ff-el-form-check.ff-el-form-check.ff-el-image-holder {
+  border-radius: 32px !important;
+}
+
+.contact-section .ff-el-form-check.ff-el-form-check.ff-el-image-holder label {
+  width: 100% !important;
+}
+.contact-section button {
+  cursor: pointer;
+}
+
+.contact-section .ff-el-progress-status {
+  font-size: 12px !important;
+  color: #515151 !important;
+}
+
+@media (max-width: 768px) {
+  .contact-section label.ff-el-image-input-src {
+    width: 100% !important;
+  }
+  .contact-section label.ff-el-form-check-label {
+    padding: 0 !important;
+  }
+  .contact-section .fluentform .ff-el-group.ff_list_buttons .ff-el-form-check {
+    float: left !important;
+  }
+}
+
+

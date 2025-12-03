@@ -1,0 +1,612 @@
+/* ============================
+   NEWSROOM PAGE - GLOBAL
+   ============================ */
+
+.newsroom-page {
+    background-color: #ffffff; 
+    padding-bottom: 80px;
+}
+
+.newsroom-page h1,
+.newsroom-page h2,
+.newsroom-page h3,
+.newsroom-page p {
+    margin-top: 0;
+}
+
+.newsroom-section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 24px 0;
+}
+
+.newsroom-section__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.newsroom-section__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #183B56;
+}
+
+.newsroom-section__subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5A7184;
+}
+
+/* ============================
+   HERO SECTION
+   ============================ */
+
+.newsroom-hero {
+    position: relative;
+    background-image: url('http://disotech-training.local/wp-content/uploads/2025/11/f1e8465510efa4de30931d9fc41ed65134a3a6c2.jpg');
+    background-size: cover;
+    background-position: 60% 30%;
+    color: #ffffff;
+    min-height: 600px;
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 70px;
+    clip-path: ellipse(85% 100% at top);
+    z-index: 0;
+}
+
+.newsroom-hero__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 200px 24px 140px; 
+    display: flex;
+    flex-direction: column;      
+    align-items: center;        
+    text-align: center;
+    gap: 40px;
+}
+
+.newsroom-hero__content {
+    max-width: 640px;
+}
+
+.newsroom-hero__title {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+/* ============================
+   FEATURED CASE STUDY SECTION
+   ============================ */
+
+.newsroom-featured-case {
+    max-width: 1180px;
+    margin: -150px auto 40px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 5;
+}
+
+.newsroom-featured-case__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.featured-case-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.featured-case-card__image {
+    flex: 0 0 45%;
+}
+
+.featured-case-card__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-case-card__content {
+    flex: 1;
+    padding: 24px 28px 22px;
+    text-align: left;
+    display: flex;              
+    flex-direction: column;     
+}
+
+.newsroom-page .badge {
+    display: inline-flex !important;        
+    align-items: center;
+    justify-content: center;
+    padding: 4px 14px;                     
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    width: auto !important;                
+    max-width: max-content;                 
+}
+
+.badge--featured {
+    background: #e0ecff;
+    color: #1565D8;
+}
+
+.featured-case-card__title {
+    margin-top: 12px;
+    font-family: 'Gotham', sans-serif;
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #183B56;
+}
+
+.featured-case-card__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.featured-case-card__excerpt {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5A7184;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.featured-case-card__meta {
+    margin-top: auto;        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #5A7184;
+    font-weight: 600;
+}
+
+.featured-case-card__author {
+    font-weight: 500;
+    color: #4b5563;
+}
+
+.featured-case-card__dot {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.featured-case-card__no-featured {
+    background: rgba(15, 23, 42, 0.06);
+    border-radius: 12px;
+    padding: 16px 18px;
+    font-size: 14px;
+}
+
+/* ============================
+   RESPONSIVE – HERO
+   ============================ */
+
+@media (max-width: 640px) {
+    .newsroom-hero {
+        min-height: 0;
+    }
+
+    .newsroom-hero__inner {
+        padding: 88px 16px 48px;
+        gap: 24px;
+    }
+
+    .newsroom-hero__title {
+        font-size: 28px;
+    }
+}
+
+/* ============================
+   RESPONSIVE – FEATURED CASE STUDY
+   ============================ */
+
+@media (max-width: 900px) {
+    .newsroom-featured-case {
+        margin: -40px auto 32px;
+        padding: 0 16px;
+    }
+
+    .featured-case-card {
+        flex-direction: column;
+    }
+
+    .featured-case-card__image img {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 640px) {
+    .featured-case-card__title {
+        font-size: 18px;
+    }
+
+    .featured-case-card__excerpt {
+        font-size: 12px;
+    }
+}
+
+/* ============================
+   POPULAR ARTICLES SECTION
+   ============================ */
+
+.newsroom-popular {
+    max-width: 1180px;
+    margin: 80px auto 40px;
+    padding: 0 24px;
+}
+
+.newsroom-popular__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.newsroom-popular__titles {
+    max-width: 550px;
+}
+
+.newsroom-popular__actions {
+    flex-shrink: 0;
+    margin-bottom: 30px;
+}
+
+.btn-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #1565D8;
+    color: #1565D8;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-view-all__icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.btn-view-all:hover {
+    background-color: #1565D8;
+    color: #ffffff;
+}
+
+.newsroom-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 640px) {
+    .newsroom-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.newsroom-grid--popular {
+    margin-bottom: 40px;
+}
+
+.popular-article-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.popular-article-card__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.popular-article-card__image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px 0px #0F182C26;
+    height: 540px;              
+}
+
+.popular-article-card__image img {
+    display: block;
+    width: 100%;
+    height: 100%;               
+    object-fit: cover;          
+}
+
+.popular-article-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, rgba(22, 49, 70, 0.453847) 45.38%, #152532 100%);
+}
+
+.popular-article-card__top {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+}
+
+.popular-article-card__bottom {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 22px;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.popular-article-card .badge {
+    margin-bottom: 16px;
+    background: #ffffff;
+    color: #36B37E;
+    letter-spacing: 0em;
+}
+
+.popular-article-card__title {
+    font-family: 'Gotham', sans-serif;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: #ffffff;
+}
+
+.popular-article-card__excerpt {
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0 0 18px;
+}
+
+.popular-article-card__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.popular-article-card__author {
+    font-weight: 500;
+}
+
+/* ============================
+   RECENT ARTICLES SECTION
+   ============================ */
+
+.newsroom-grid--recent .popular-article-card__image img {
+    min-height: 540px;
+}
+
+.newsroom-grid--recent {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* ============================
+   RESPONSIVE – RECENT ARTICLES
+   ============================ */
+
+@media (max-width: 1024px) {
+    .newsroom-grid--recent {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .newsroom-recent {
+        padding: 0 16px;
+    }
+
+    .newsroom-grid--recent {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .popular-article-card__image {
+        height: 420px;
+    }
+}
+
+@media (max-width: 640px) {
+    .popular-article-card__image {
+        height: 360px;
+    }
+}
+
+/* ============================
+   CASE STUDIES SLIDER
+   ============================ */
+
+.case-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    /* box-shadow:
+        0px 24px 50px rgba(0, 0, 0, 0.12),  
+        0 0 0 1px rgba(15, 23, 42, 0.06);     */
+    border: 3px solid rgba(15, 23, 42, 0.06); 
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+}
+
+.newsroom-case-studies {
+    max-width: 1180px;
+    margin: 80px auto 80px;
+    padding: 0 24px;
+}
+
+.newsroom-case-embla {
+    position: relative;
+    margin-top: 24px;
+}
+
+.embla__viewport {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+    gap: 24px;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+}
+
+.embla__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    border: none;
+    background-color: #1565D8;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    /* box-shadow: 0px 10px 25px rgba(21, 101, 216, 0.4); */
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    z-index: 10;
+}
+
+.embla__button--prev {
+    left: -26px;
+}
+
+.embla__button--next {
+    right: -26px;
+}
+
+.embla__button:hover {
+    background-color: #0f4fb7;
+    transform: translateY(-50%) scale(1.02);
+}
+
+.embla__button.is-disabled {
+    opacity: 0.4;
+    cursor: default;
+    box-shadow: none;
+}
+
+@media (max-width: 900px) {
+    .embla__button--prev {
+        left: 8px;
+    }
+    .embla__button--next {
+        right: 8px;
+    }
+}
+
+@media (max-width: 640px) {
+    .newsroom-case-studies {
+        padding: 0 16px;
+    }
+
+    .embla__button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* ============================
+   ALL ARTICLES SECTION
+   ============================ */
+
+.newsroom-all {
+    max-width: 1180px;
+    margin: 80px auto 80px;
+    padding: 0 24px;
+}
+
+.newsroom-grid--all-top {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+    .newsroom-all {
+        padding: 0 16px;
+    }
+
+    .newsroom-grid--all-top {
+        margin-bottom: 24px;
+    }
+}
+
+.newsroom-all__more {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-more-articles {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #1565D8;
+    color: #1565D8;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-more-articles:hover {
+    background: #1565D8;
+    color: #ffffff;
+}
+
+.btn-more-articles__icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .newsroom-popular__header {
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 12px; 
+    }
+
+    .newsroom-popular__actions {
+        margin-bottom: 0;
+    }
+}
