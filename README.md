@@ -1,4 +1,4 @@
-# Disotech – Newsroom (Blocksy Child Theme)
+# Disotech - Newsroom (Blocksy Child Theme)
 
 This repository contains the custom code for the **Newsroom** page and related components
 for the Disotech training project.  
